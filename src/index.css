@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #1C1C1C;
+    color: rgb(237, 239, 239);
+
+}
+
+.container {
+    width: 95%;
+    max-width: 1440px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Styles for screens with a maximum width of 768 pixels (e.g., tablets) */
+@media screen and (max-width: 1080px) {
+    .container {
+        width: 90%;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 1rem auto;
+    }
+}
+
+/* Styles for screens with a maximum width of 480 pixels (e.g., smartphones) */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        align-content: flex-start;
+        margin: 1rem auto;
+    }
+}
